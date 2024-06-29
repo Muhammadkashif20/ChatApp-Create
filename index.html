@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ChatApp</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body onload="renderMsgs()">
+    <div class="h-[100vh] w-full flex">
+      <div class="w-[30%] h-full bg-green-100">
+        <div class="p-4 flex items-center gap-4">
+          <img
+            src="https://t4.ftcdn.net/jpg/05/89/93/27/360_F_589932782_vQAEAZhHnq1QCGu5ikwrYaQD0Mmurm0N.jpg"
+            class="rounded-full h-16 w-16"
+          />
+          <h2>Kashif</h2>
+        </div>
+      </div>
+      <div class="w-full h-full">
+        <div class="bg-blue-100 overflow-y-auto h-[93vh] flex flex-col p-2" id="msgList"></div>
+        <div class="flex gap-2 justify-center items-center h-[7vh]">
+          <input
+            type="text"
+            placeholder="what's in your mind?"
+            class="w-[78%] pl-2 border border-gray-500 rounded-md"
+          />
+          <button class="bg-red-300 w-[20%] rounded-md text-white font-bold" onclick="sendMsg()">
+            send
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
+
